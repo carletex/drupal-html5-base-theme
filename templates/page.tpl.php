@@ -70,9 +70,31 @@
 <div id="page-wrapper">
 
   <header id="header" role="banner">
-    <?php print render($page['header']); ?>
-  </header> <!-- /.section, /#header -->
+    <?php if ($logo): ?>
+      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+      </a>
+    <?php endif; ?>
 
+    <?php print render($page['header']); ?>
+  </header> <!-- /#header -->
+
+  <?php if ($main_menu): ?>
+    <nav id="navigation">
+      <?php print theme('links__system_main_menu', array(
+          'links' => $main_menu,
+          'attributes' => array(
+            'id' => 'main-menu-links',
+            'class' => array('links', 'clearfix'),
+          ),
+          'heading' => array(
+            'text' => t('Main menu'),
+            'level' => 'h2',
+            'class' => array('element-invisible'),
+          ),
+      )); ?>
+    </nav> <!-- /#navigation -->
+  <?php endif; ?>
 
   <div id="main-wrapper">
 
@@ -97,11 +119,6 @@
       <?php print render($page['content']); ?>
     </div> <!--  /#content -->
 
-    <?php if ($main_menu): ?>
-      <nav id="navigation" role="navigation">
-      </nav> <!-- /.section, /#navigation -->
-    <?php endif; ?>
-
     <?php if ($page['sidebar_one']): ?>
       <aside id="sidebar-first" class="column sidebar">
         <?php print render($page['sidebar_one']); ?>
@@ -119,7 +136,7 @@
   <?php if ($page['footer']): ?>
   <footer id="footer">
       <?php print render($page['footer']); ?>
-  </footer> <!-- /.section, /#footer -->
+  </footer> <!-- /#footer -->
    <?php  endif; ?>
 
 </div>
