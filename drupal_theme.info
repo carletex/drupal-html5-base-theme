@@ -1,0 +1,13 @@
+name = Fisioterapia Zamora
+description = Tema HTML5 para Fisioterapia Zamora
+core = 7.x
+engine = phptemplate
+
+stylesheets[all][] = css/estilos.css
+stylesheets[all][] = css/normalize.css
+
+regions[header] = Header
+regions[footer] = Footer
+regions[content] = Contenido
+regions[columna_lateral] = Columna Lateral
+regions[help] = Ayuda
