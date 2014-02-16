@@ -76,7 +76,7 @@
 
   <div id="main-wrapper">
 
-    <div id="content" class="column" role="main">
+    <div id="content" class="column">
 
       <?php print $messages; ?>
       <?php print render($title_prefix); ?>
@@ -102,17 +102,25 @@
       </nav> <!-- /.section, /#navigation -->
     <?php endif; ?>
 
-    <?php if ($page['columna_lateral']): ?>
-      <aside id="sidebar-first" class="column sidebar" role="complementary">
-        <?php print render($page['columna_lateral']); ?>
+    <?php if ($page['sidebar_one']): ?>
+      <aside id="sidebar-first" class="column sidebar">
+        <?php print render($page['sidebar_one']); ?>
+      </aside>
+    <?php endif; ?>
+
+    <?php if ($page['sidebar_two']): ?>
+      <aside id="sidebar-second" class="column sidebar">
+        <?php print render($page['sidebar_two']); ?>
       </aside>
     <?php endif; ?>
 
   </div>
 
+  <?php if ($page['footer']): ?>
   <footer id="footer">
       <?php print render($page['footer']); ?>
   </footer> <!-- /.section, /#footer -->
+   <?php  endif; ?>
 
 </div>
 
