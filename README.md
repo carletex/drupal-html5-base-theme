@@ -9,7 +9,7 @@ You can create a [sub-theme](https://drupal.org/node/225125), or you can rather 
 1. Download/Clone this repository.
 2. Create a folder with you theme name and move the files inside.
 3. Change the .info file with your theme name.
-3. Edit the .info file as you need.
+4. Edit the .info file as you need.
 5. Ready to develop!
 
 ## Include
