@@ -1,13 +1,14 @@
-name = Fisioterapia Zamora
-description = Tema HTML5 para Fisioterapia Zamora
+name = Drupal HTML5 theme
+description = Minimal html5 theme for Drupal
 core = 7.x
 engine = phptemplate
 
-stylesheets[all][] = css/estilos.css
+stylesheets[all][] = css/style.css
 stylesheets[all][] = css/normalize.css
 
 regions[header] = Header
 regions[footer] = Footer
-regions[content] = Contenido
-regions[columna_lateral] = Columna Lateral
-regions[help] = Ayuda
+regions[content] = Content
+regions[sidebar_one] = Sidebar one
+regions[sidebar_two] = Sidebar two
+regions[help] = Help
