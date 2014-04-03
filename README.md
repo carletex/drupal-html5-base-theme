@@ -16,3 +16,5 @@ You can create a [sub-theme](https://drupal.org/node/225125), or you can rather 
 ## Include
 
 **css/Normalize.css:** Makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing. [Read more](http://necolas.github.io/normalize.css/).
+
+***js/vendor/html5shiv.min.js**: Source code adds new HTML5 elements (which is simple code), but also supports printing HTML5 elements and includes the default styles for HTML5 elements, like block on article and section. [Read more](https://code.google.com/p/html5shiv/).
