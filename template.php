@@ -20,5 +20,5 @@ function drupal_theme_preprocess_html(&$variables){
        'content' => "IE=edge,chrome=1",
        )
      );
-   drupal_add_html_head($metaIE,'metaIE')
+   drupal_add_html_head($metaIE,'metaIE');
 }
